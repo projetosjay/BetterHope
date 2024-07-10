@@ -1,3 +1,3 @@
 # BetterHope
 TCC Informática para Internet, ETEC MCM 2024
-projetosjay.github.io/BetterHope/
+https://projetosjay.github.io/BetterHope/
