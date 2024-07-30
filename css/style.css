@@ -46,6 +46,15 @@ h1 {
         margin-top: 0px;
         padding-left: 2%;
     }
+    h6{
+      font-family: 'gilroy';
+    }
+    .font{
+      font-family: 'gilroy';
+    }
+    .fonte{
+      font-family: 'yeseva';
+    }
 
     .circle-image {
       display: flex; /* Utiliza flexbox para alinhar os itens horizontalmente */
