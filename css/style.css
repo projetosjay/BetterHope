@@ -60,7 +60,8 @@ h1 {
       display: flex; /* Utiliza flexbox para alinhar os itens horizontalmente */
       justify-content: flex-end; /* Alinha os itens à direita */
       align-items: center; /* Centraliza os itens verticalmente */
-      height: 100px; /* Altura ajustada conforme necessário */
+      height: 50px; /* Altura ajustada conforme necessário */
+      width: 50%;
     }
     
     .circle-item {
