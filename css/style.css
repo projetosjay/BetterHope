@@ -144,7 +144,7 @@ nav.itens_menu ul li ul li a:hover {
   padding-top: 100px;
 }
 .img_logo {
-  height: 200px; 
+  height: 150px; 
 }
 .img_centro {
   display: block;
@@ -1029,6 +1029,10 @@ a:focus {
 
 /*css topicos*/
 
+
+
+/*css down*/
+
 .containerteste {
   display: flex;
   justify-content: space-between;
@@ -1117,8 +1121,6 @@ a:focus {
   border-radius: 8px; /* Bordas arredondadas para a imagem */
 }
 
-
-
 .depoimento-container {
   display: flex;
   align-items: flex-start; /* Alinha o conteúdo ao topo */
@@ -1171,6 +1173,8 @@ a:focus {
 
 /*css down*/
 
+
+
 /*css equipe*/
 
 .equipe-container {
@@ -1211,3 +1215,71 @@ a:focus {
 
 /*css equipe*/
 
+
+
+/*configuração do link dos botoes dos topicos do index*/
+.atop{
+  color: white;
+  font-size: 23px;
+}
+
+.atop:hover {
+  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px;
+  color: #8c9bfc;
+}
+/*configuração do link dos botoes dos topicos do index*/
+
+
+
+/*configuração texto index - sobre nosso projeto*/
+.psaiba{
+  text-align: justify;
+  font-size: 20px;
+}
+/*configuração texto index - sobre nosso projeto*/
+
+
+
+/*configuração do link equipe index*/
+.aequipe{
+  color: #8c9bfc;
+  font-size: 17px;
+}
+
+.aequipe:hover {
+  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px;
+  color: #8c9bfc;
+}
+/*configuração do link equipe index*/
+
+
+
+
+
+
+.fundo-teste{
+  background-image: url('https://i.pinimg.com/736x/81/a9/8f/81a98f3d514179eb05a4d75246c8e9ed.jpg') ; /* Substitua pela URL da sua imagem */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.titulo-cor{
+  color: #faf6e2;
+}
+
+.textoconteiner-saiba_mais{
+  width: 70%;
+  height: 50%;
+  padding: 5%;
+  margin: 0 auto; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #faf6e2;
+  text-align: justify;
+}
