@@ -901,6 +901,7 @@ a:focus {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #bcc4f7;
+  color: #000000;
   text-align: justify;
 }
 
@@ -924,6 +925,7 @@ a:focus {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #bcc4f7;
+  color: #000000;
   text-align: justify;
   flex: 1;
 }
@@ -1236,6 +1238,7 @@ a:focus {
 .psaiba{
   text-align: justify;
   font-size: 20px;
+  color: #000000;
 }
 /*configuração texto index - sobre nosso projeto*/
 
@@ -1258,7 +1261,7 @@ a:focus {
 
 
 
-
+/*configuração saiba mais*/
 .fundo-teste{
   background-image: url('https://i.pinimg.com/736x/81/a9/8f/81a98f3d514179eb05a4d75246c8e9ed.jpg') ; /* Substitua pela URL da sua imagem */
   background-size: cover;
@@ -1266,8 +1269,6 @@ a:focus {
   background-repeat: no-repeat;
 
 }
-
-
 
 .titulo-cor{
   color: #faf6e2;
@@ -1283,3 +1284,19 @@ a:focus {
   background-color: #faf6e2;
   text-align: justify;
 }
+/*configuração saiba mais*/
+
+
+
+/*configuração txt down e autismo*/
+.config-txt{
+  text-align: justify;
+  font-size: 17px;
+  color: #8c9bfc;
+}
+
+.congig-txt-topico{
+  text-align: justify;
+  font-size: 17px;
+}
+/*configuração txt down e autismo*/
