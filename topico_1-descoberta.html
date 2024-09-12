@@ -60,9 +60,81 @@
           </ul>
         </nav>
       </header>
+
+    </br>
+  </br>
+</br>
+      <div class="titulotop">Descoberta</div>
       <div class="teste"><img src="" alt="colocar imagem do conteiner" ></div>
 
-      <div class="titulotop">Descoberta</div>
+    </br>
+  </br>
+</br> 
+
+<div class="carousel">
+  <div class="carousel-container">
+    <div class="carousel-card">
+      <img src="imagem1.jpg" alt="Imagem 1">
+      <h3>Começo</h3>
+      <p>A chegada de uma criança com deficiência na família.</p>
+    </div>
+    <div class="carousel-card">
+      <img src="imagem2.jpg" alt="Imagem 2">
+      <h3>Momento da notícia</h3>
+      <p>Descrição do card 2.</p>
+    </div>
+    <div class="carousel-card">
+      <img src="imagem3.jpg" alt="Imagem 3">
+      <h3>Diagnóstico</h3>
+      <p>Descrição do card 3.</p>
+    </div>
+    <div class="carousel-card">
+      <img src="imagem4.jpg" alt="Imagem 4">
+      <h3>Como descobrir</h3>
+      <p>Descrição do card 4.</p>
+    </div>
+    <div class="carousel-card">
+      <img src="imagem4.jpg" alt="Imagem 4">
+      <h3>Aborto</h3>
+      <p>Descrição do card 5.</p>
+    </div>
+    <div class="carousel-card">
+      <img src="imagem4.jpg" alt="Imagem 4">
+      <h3>Profissionais</h3>
+      <p>Descrição do card 6.</p>
+    </div>
+    <div class="carousel-card">
+      <img src="imagem4.jpg" alt="Imagem 4">
+      <h3>Sentimentos</h3>
+      <p>Descrição do card 7.</p>
+    </div>
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<script>
+let currentSlide = 0;
+function moveSlide(n) {
+const cards = document.querySelectorAll('.carousel-card');
+const totalSlides = Math.ceil(cards.length / 4); // Exibir 4 cards por vez
+currentSlide = (currentSlide + n + totalSlides) % totalSlides;
+document.querySelector('.carousel-container').style.transform = `translateX(${-currentSlide * 100}%)`;
+}
+</script>  
+      <div class="agrupamento">
+      <div class="textoconteiner2">
+        <h6>Quando uma criança com deficiência chega à família, além de causar sentimentos inesperados, pode também gerar dúvidas e inseguranças sobre como oferecer o suporte necessário. É comum que os pais e parentes não saibam exatamente como agir, o que pode levar a comportamentos como a superproteção, que, apesar de bem-intencionada, pode limitar o desenvolvimento da autonomia da criança. Outro desafio é lidar com a aceitação da condição da criança, o que pode resultar tanto em atitudes de pena, que reforçam uma visão negativa da deficiência, quanto em rejeição, que pode surgir devido ao medo ou à falta de compreensão.
+          <br>
+          <br>
+          Essas reações, quando não trabalhadas de forma adequada, podem prejudicar o desenvolvimento da criança, impactando sua capacidade de interagir socialmente e seu bem-estar emocional. É importante que a família busque apoio e informações para aprender a lidar de maneira saudável com a situação, promovendo um ambiente acolhedor e encorajador, onde a criança possa crescer com confiança e apoio para desenvolver seu potencial. O envolvimento em grupos de apoio, acompanhamento de profissionais especializados e a troca de experiências com outras famílias podem ser fundamentais nesse processo.           
+        </h6>
+          
+      </div>
+      <div class="titulolado"> O começo
+        <div class="imagemtitulo1"><img src="" alt="" ></div>
+      </div>
+      </div>
 
       <div class="textoconteiner1">
         <h6>Em uma época longínqua, quando os mapas eram desenhados à mão e a cartografia ainda era uma arte enigmática, uma cidade perdida fascinava os exploradores e os sonhadores. Chamavam-na de Eldoria, uma metrópole que, segundo lendas, era repleta de maravilhas e segredos antigos.
@@ -71,91 +143,6 @@
           Em uma noite estrelada, enquanto acampava em uma clareira, Lorenzo encontrou um fragmento de um antigo pergaminho enterrado sob uma pedra. O pergaminho continha símbolos e coordenadas que pareciam indicar a localização de Eldoria. Animado, Lorenzo decidiu seguir as coordenadas na manhã seguinte.</h6>
       </div>
 
-      <div class="agrupamento">
-      <div class="textoconteiner2">
-        <h6>Em uma época longínqua, quando os mapas eram desenhados à mão e a cartografia ainda era uma arte enigmática, uma cidade perdida fascinava os exploradores e os sonhadores. Chamavam-na de Eldoria, uma metrópole que, segundo lendas, era repleta de maravilhas e segredos antigos.
-          Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.
-          Entre os muitos que se aventuraram em busca de Eldoria, havia um jovem explorador chamado Lorenzo. Motivado por histórias e mapas antigos, Lorenzo partiu em uma expedição que o levou através de desertos escaldantes e oceanos tumultuosos. Sua jornada foi marcada por desafios extremos e encontros com tribos misteriosas que pareciam saber mais sobre a cidade perdida do que deixavam transparecer.
-          Em uma noite estrelada, enquanto acampava em uma clareira, Lorenzo encontrou um fragmento de um antigo pergaminho enterrado sob uma pedra. O pergaminho continha símbolos e coordenadas que pareciam indicar a localização de Eldoria. Animado, Lorenzo decidiu seguir as coordenadas na manhã seguinte.
-          <br>
-          <br>
-          Em uma época longínqua, quando os mapas eram desenhados à mão e a cartografia ainda era uma arte enigmática, uma cidade perdida fascinava os exploradores e os sonhadores. Chamavam-na de Eldoria, uma metrópole que, segundo lendas, era repleta de maravilhas e segredos antigos.
-          Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.
-          Entre os muitos que se aventuraram em busca de Eldoria, havia um jovem explorador chamado Lorenzo. Motivado por histórias e mapas antigos, Lorenzo partiu em uma expedição que o levou através de desertos escaldantes e oceanos tumultuosos. Sua jornada foi marcada por desafios extremos e encontros com tribos misteriosas que pareciam saber mais sobre a cidade perdida do que deixavam transparecer.
-          Em uma noite estrelada, enquanto acampava em uma clareira, Lorenzo encontrou um fragmento de um antigo pergaminho enterrado sob uma pedra. O pergaminho continha símbolos e coordenadas que pareciam indicar a localização de Eldoria. Animado, Lorenzo decidiu seguir as coordenadas na manhã seguinte.
-          <br>
-          <br> 
-          Motivado por histórias e mapas antigos, Lorenzo partiu em uma expedição que o levou através de desertos escaldantes e oceanos tumultuosos. Sua jornada foi marcada por desafios extremos e encontros com tribos misteriosas que pareciam saber mais sobre a cidade perdida do que deixavam transparecer.
-          Em uma noite estrelada, enquanto acampava em uma clareira.             
-        </h6>
-          
-      </div>
-      <div class="titulolado">Título da Matéria
-        <div class="imagemtitulo1"><img src="" alt="" ></div>
-        <br>
-        <div class="imagemtitulo2"><img src="" alt="" ></div>
-      </div>
-      </div>
-
-      <br>
-      <br>
-
-      <div class="carousel">
-        <div class="carousel-container">
-          <div class="carousel-card">
-            <img src="imagem1.jpg" alt="Imagem 1">
-            <h3>Card 1</h3>
-            <p>Descrição do card 1.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem2.jpg" alt="Imagem 2">
-            <h3>Card 2</h3>
-            <p>Descrição do card 2.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem3.jpg" alt="Imagem 3">
-            <h3>Card 3</h3>
-            <p>Descrição do card 3.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem4.jpg" alt="Imagem 4">
-            <h3>Card 4</h3>
-            <p>Descrição do card 4.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem4.jpg" alt="Imagem 4">
-            <h3>Card 5</h3>
-            <p>Descrição do card 5.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem4.jpg" alt="Imagem 4">
-            <h3>Card 6</h3>
-            <p>Descrição do card 6.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem4.jpg" alt="Imagem 4">
-            <h3>Card 7</h3>
-            <p>Descrição do card 7.</p>
-          </div>
-          <div class="carousel-card">
-            <img src="imagem4.jpg" alt="Imagem 4">
-            <h3>Card 8</h3>
-            <p>Descrição do card 8.</p>
-          </div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      </div>
-
-      <script>
-     let currentSlide = 0;
- function moveSlide(n) {
-  const cards = document.querySelectorAll('.carousel-card');
-  const totalSlides = Math.ceil(cards.length / 4); // Exibir 4 cards por vez
-  currentSlide = (currentSlide + n + totalSlides) % totalSlides;
-  document.querySelector('.carousel-container').style.transform = `translateX(${-currentSlide * 100}%)`;
- }
-      </script>
       <br>
       <br>
       <br>
