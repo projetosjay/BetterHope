@@ -117,8 +117,11 @@ nav.itens_menu ul li a {
   color: #A2AEF7;
 }
 nav.itens_menu ul li a:hover {
-  color: black;
+  background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px;
+  color: #000000;
 }
+
 nav.itens_menu ul li ul {
   display: none;
   background: #fcf8cc31;
@@ -1228,7 +1231,7 @@ a:focus {
 .atop:hover {
   background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
   border-radius: 5px;
-  color: #8c9bfc;
+  color: #000000;
 }
 /*configuração do link dos botoes dos topicos do index*/
 
@@ -1253,7 +1256,7 @@ a:focus {
 .aequipe:hover {
   background-color: #c1c8f8; /* Cor de fundo ao passar o mouse */
   border-radius: 5px;
-  color: #8c9bfc;
+  color: #000000;
 }
 /*configuração do link equipe index*/
 
