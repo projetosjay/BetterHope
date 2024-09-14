@@ -903,8 +903,8 @@ a:focus {
   margin: 0 auto; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #bcc4f7;
-  color: #000000;
+  background-color: #f8f6e79d;
+  color: #666;
   text-align: justify;
 }
 
@@ -927,7 +927,7 @@ a:focus {
   margin: 15%; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #bcc4f7;
+  background-color: #f8f6e79d;
   color: #000000;
   text-align: justify;
   flex: 1;
@@ -942,6 +942,13 @@ a:focus {
   text-align: center;
   align-items: center; /* Centraliza os itens verticalmente */
   flex: 1;
+}
+
+.container-subtitle{
+  text-align: left;
+  font-size: 24px;
+  font-family: 'yeseva';
+  color: #A2AEF7;
 }
 
 .imagemtitulo1 {
@@ -983,7 +990,7 @@ a:focus {
   background-color: #fcf9de;
   margin: 0 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -1030,6 +1037,52 @@ a:focus {
 
 .prev:hover, .next:hover {
   background-color: #A2AEF7;
+}
+
+
+.containerdiagnostico {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  width: 74%;
+  height: 80%;
+  padding: 6%;
+  margin: 15%; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f6e79d;
+  color: #000000;
+  text-align: justify;
+  flex: 1;
+}
+
+.left-content {
+  width: 45%;
+  text-align: left;
+}
+
+.image-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.right-content {
+  width: 45%;
+  text-align: left;
+}
+
+.text {
+  font-size: 18px;
+  color: #666;
 }
 
 /*css topicos*/
