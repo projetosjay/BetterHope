@@ -1428,3 +1428,36 @@ footer div {
 }
 
 /*configuração footer*/
+
+
+
+
+#sidebarMenu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #A2AEF7;
+  transition: right 0.3s ease;
+}
+
+/* Quando ativo, move o menu para a esquerda (visível) */
+#sidebarMenu.active {
+  right: 0;
+}
+
+/* Links e texto do menu */
+#sidebarMenu .nav-link, #sidebarMenu h5 {
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Estilos para o conteúdo da página */
+.content {
+  padding: 20px;
+}
+
+.txt-acessibilidade{
+  color: #FFFDE2;
+}
