@@ -1429,9 +1429,6 @@ footer div {
 
 /*configuração footer*/
 
-
-
-
 #sidebarMenu {
   position: fixed;
   top: 0;
@@ -1459,5 +1456,10 @@ footer div {
 }
 
 .txt-acessibilidade{
-  color: #FFFDE2;
+  color: #f7f5e7;
+}
+.btn-light{
+  color: #A2AEF7;
+  background-color: #f7f5e7;
+  margin-bottom: 8%;
 }
