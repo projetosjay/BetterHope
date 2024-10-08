@@ -38,6 +38,24 @@
             <button class="btn btn-light" id="increaseFont">Aumentar Fonte</button>
             <button class="btn btn-light" id="decreaseFont">Diminuir Fonte</button>
           </div>
+          <div class="d-grid gap-2 px-3">
+            <p class="txt-acessibilidade">Ajuste de cor</p>
+            <div id="theme-buttons">
+              <button class="theme-button" data-theme="traditional">Tema Tradicional</button>
+              <br>
+              <br>
+              <button class="theme-button" data-theme="monochrome">Tema Monocromático</button>
+              <br>
+              <br>
+              <button class="theme-button" data-theme="high-contrast-light">Alto Contraste Claro</button>
+              <br>
+              <br>
+              <button class="theme-button" data-theme="high-contrast-dark">Alto Contraste Escuro</button>
+              <br>
+              <br>
+              <button class="theme-button" data-theme="dark">Tema Escuro</button> <!-- Novo botão para o tema escuro -->
+          </div>
+          </div>
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -68,7 +86,7 @@
     </br>
         <div class="containerteste">
             <div class="coluna-imagem">
-              <img src="images/autismo/autismo.png" alt="Descrição da imagem" style="width: 80%;">
+              <img src="images/saiba mais/criança-autismo.png" alt="Descrição da imagem" style="width: 80%;">
             </div>
             <div class="coluna-texto">
                 <h2>Autismo</h2>
@@ -259,41 +277,90 @@
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- java ajuste de cor -->
 <script>
-  document.getElementById('toggleButton').addEventListener('click', function () {
-    var sidebarMenu = document.getElementById('sidebarMenu');
-    sidebarMenu.classList.toggle('active');
+  // script.js
+  const themeButtons = document.querySelectorAll('.theme-button');
+  const body = document.body;
+  
+  // Verifica o tema atual e aplica o tema padrão
+  if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'traditional');
+  }
+  
+  applyTheme(localStorage.getItem('theme'));
+  
+  themeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const selectedTheme = button.getAttribute('data-theme');
+          applyTheme(selectedTheme);
+      });
   });
-
-  var content = document.querySelector('.content');
-  var currentFontSize = 16; // Tamanho padrão da fonte
-
-  document.getElementById('increaseFont').addEventListener('click', function () {
-    currentFontSize += 2;
-    content.style.fontSize = currentFontSize + 'px';
-  });
-
-  document.getElementById('decreaseFont').addEventListener('click', function () {
-    if (currentFontSize > 10) { // Limite mínimo para a fonte
-      currentFontSize -= 2;
+  
+  function applyTheme(theme) {
+      // Remove todas as classes de tema
+      body.classList.remove('traditional-theme', 'monochrome-theme', 'high-contrast-light-theme', 'high-contrast-dark-theme', 'dark-theme');
+      
+      // Adiciona a classe do tema selecionado
+      if (theme === 'traditional') {
+          body.classList.add('traditional-theme');
+      } else if (theme === 'monochrome') {
+          body.classList.add('monochrome-theme');
+      } else if (theme === 'high-contrast-light') {
+          body.classList.add('high-contrast-light-theme');
+      } else if (theme === 'high-contrast-dark') {
+          body.classList.add('high-contrast-dark-theme');
+      } else if (theme === 'dark') {
+          body.classList.add('dark-theme'); // Adiciona o tema escuro
+      }
+      
+      // Armazena o tema selecionado no localStorage
+      localStorage.setItem('theme', theme);
+  }
+  
+  </script>
+   <!-- java ajuste de cor -->
+  
+  
+  <!-- java tamanho da fonte -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('toggleButton').addEventListener('click', function () {
+      var sidebarMenu = document.getElementById('sidebarMenu');
+      sidebarMenu.classList.toggle('active');
+    });
+  
+    var content = document.querySelector('.content');
+    var currentFontSize = 16; // Tamanho padrão da fonte
+  
+    document.getElementById('increaseFont').addEventListener('click', function () {
+      currentFontSize += 2;
       content.style.fontSize = currentFontSize + 'px';
-    }
-  });
-</script>
-
-
-<div vw class="enabled"> 
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper> 
-    <div class="vw-plugin-top-wrapper"></div> 
+    });
+  
+    document.getElementById('decreaseFont').addEventListener('click', function () {
+      if (currentFontSize > 10) { // Limite mínimo para a fonte
+        currentFontSize -= 2;
+        content.style.fontSize = currentFontSize + 'px';
+      }
+    });
+  </script>
+  <!-- java tamanho da fonte -->
+  
+  
+  <!-- java libras -->
+  <div vw class="enabled"> 
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper> 
+      <div class="vw-plugin-top-wrapper"></div> 
+    </div> 
   </div> 
-</div> 
-
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+  
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- java libras -->
 
 
 </body>
