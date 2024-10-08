@@ -21,6 +21,7 @@
 .centralizado {
     text-align: center; /* Centraliza o texto dentro do elemento */
     margin-top: 20px; /* Ajuste opcional para margem superior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -74,6 +75,7 @@ h1 {
       border-radius: 50%; /* Faz com que cada item seja exibido como um círculo */
       overflow: hidden; /* Garante que a imagem dentro do círculo não vaze */
       margin: 0 5px; /* Espaçamento entre os itens */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
     
     .circle-item img {
@@ -177,6 +179,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .custom_heading-container h2 {
@@ -502,6 +505,7 @@ a:focus {
 
 .about_section .img-box img {
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .about_section .detail-box p {
@@ -886,22 +890,30 @@ a:focus {
 /*# sourceMappingURL=style.css.map */
 
 /*css topicos*/
-.teste {
+.test {
   width: 100%;
   height: 85%;
-  padding: 280px;
+  padding: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #A2AEF7;
   text-align: center;
 }
 
+.config-img-topo{
+  width: 100%;
+  height: 40%;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 .titulotop{
-  font-size: 3em;
+  font-size: 3.5em;
   margin-top: 3%;
   font-family: 'yeseva';
   margin-bottom: 0%;
   text-align: center;
   color: #A2AEF7;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .textoconteiner1{
@@ -1056,7 +1068,7 @@ a:focus {
   width: 74%;
   height: 80%;
   padding: 6%;
-  margin: 15%; 
+  margin: 0 auto; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f8f6e79d;
@@ -1081,6 +1093,8 @@ a:focus {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .right-content {
@@ -1121,6 +1135,7 @@ a:focus {
   height: auto;
   display: block;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .coluna-texto {
@@ -1144,6 +1159,7 @@ a:focus {
   background-color: #A2AEF7;
   color: #fcf9de;
   border-color: #A2AEF7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .botao:hover {
@@ -1359,7 +1375,13 @@ a:focus {
 .config-txt{
   text-align: justify;
   font-size: 17px;
-  color: #8c9bfc;
+  color: #000000;
+}
+
+.config-txt-texte{
+  text-align: justify;
+  font-size: 17px;
+  color: #A2AEF7;
 }
 
 .congig-txt-topico{
@@ -1471,3 +1493,238 @@ footer div {
   background-color: #f7f5e7;
   margin-bottom: 8%;
 }
+/* Estilos para o conteúdo da página */
+
+
+
+
+
+
+
+
+
+
+
+
+/* configuração de mudar a cor do site */
+
+/* Tema Tradicional */
+.traditional-theme {
+  background-color: #ffffff; /* Cor de fundo tradicional */
+  color: #333; /* Cor do texto tradicional */
+}
+
+.traditional-theme h1,
+.traditional-theme h2,
+.traditional-theme h3,
+.traditional-theme h5,
+.traditional-theme li {
+  color: #A2AEF7; /* Cor dos títulos e textos no tema tradicional */
+}
+
+.traditional-theme .theme-button {
+  background-color: #f7f5e7; /* Azul para botões no tema tradicional */
+  color: #A2AEF7; /* Texto branco para botões no tema tradicional */
+}
+
+
+
+/* Tema Monocromático */
+.monochrome-theme {
+  background-color: white;
+  color: black;
+  filter: grayscale(100%);
+}
+
+.monochrome-theme h1,
+.monochrome-theme h2,
+.monochrome-theme h3,
+.monochrome-theme h5,
+.monochrome-theme p,
+.monochrome-theme div,
+.monochrome-theme li,
+.monochrome-theme button {
+  color: black; /* Cor dos títulos e textos no tema monocromático */
+}
+
+.monochrome-theme .theme-button {
+  background-color: #f7f5e7;  /* Azul para botões no tema monocromático */
+  color: black; /* Texto branco para botões no tema monocromático */
+}
+
+
+
+/* Alto Contraste Claro */
+.high-contrast-light-theme {
+  background-color: white; /* Fundo branco */
+  color: black; /* Texto escuro */
+}
+
+.high-contrast-light-theme h1,
+.high-contrast-light-theme h2,
+.high-contrast-light-theme h3,
+.high-contrast-light-theme p,
+.high-contrast-light-theme div,
+.high-contrast-light-theme li,
+.high-contrast-light-theme nav,
+.high-contrast-light-theme header {
+  color: #000; /* Cor dos títulos e textos no tema claro */
+  background-color: white;
+}
+
+.high-contrast-light-theme h5{
+  color: #000;
+}
+
+.high-contrast-light-theme button {
+  color: white; /* Cor dos títulos e textos no tema claro */
+  background-color: black;
+}
+
+.high-contrast-light-theme button:hover {
+  color: black; /* Cor dos títulos e textos no tema claro */
+  background-color: rgb(189, 189, 189);
+}
+
+
+.high-contrast-light-theme .theme-button {
+  background-color: black; /* Preto para botões no tema claro */
+  color: white; /* Texto branco para botões no tema claro */
+}
+
+
+
+
+/* Alto Contraste Escuro */
+.high-contrast-dark-theme {
+  background-color: #121212; /* Fundo escuro */
+  color: #ffcc00; /* Texto amarelo para alto contraste */
+}
+
+.high-contrast-dark-theme h1,
+.high-contrast-dark-theme h2,
+.high-contrast-dark-theme h3,
+.high-contrast-dark-theme h5,
+.high-contrast-dark-theme p,
+.high-contrast-dark-theme div,
+.high-contrast-dark-theme li,
+.high-contrast-dark-theme nav,
+.high-contrast-dark-theme header {
+  color: #ffcc00; /* Cor dos títulos e textos no tema escuro */
+  background-color: #000;
+}
+
+.high-contrast-dark-theme button{
+  color: #ffcc00; /* Cor dos títulos e textos no tema escuro */
+  background-color: rgb(29, 29, 29);
+}
+
+.high-contrast-dark-theme button:hover{
+  color: black; /* Cor dos títulos e textos no tema escuro */
+  background-color: #ffcc00;
+}
+
+.high-contrast-dark-theme .theme-button button {
+  background-color: yellow; /* Amarelo para botões no tema escuro */
+  color: rgb(31, 31, 31); /* Texto preto para botões no tema escuro */
+}
+
+
+
+
+/* Tema Escuro */
+.dark-theme {
+  background-color: black; /* Fundo preto */
+  color: white; /* Texto branco */
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h5,
+.dark-theme p,
+.dark-theme div,
+.dark-theme li,
+.dark-theme nav,
+.dark-theme header {
+  color: white; /* Cor dos títulos e textos no tema escuro */
+  background-color: #000;
+}
+
+.dark-theme button {
+  color: white; /* Cor dos títulos e textos no tema escuro */
+  background-color: rgb(43, 43, 43);
+}
+
+.dark-theme button:hover {
+  color: black; /* Cor dos títulos e textos no tema escuro */
+  background-color: white;
+}
+
+
+.dark-theme .theme-button{
+  color: white; /* Cor dos títulos e textos no tema escuro */
+  background-color: rgb(43, 43, 43);
+}
+
+.dark-theme .theme-button:hover {
+  color: black; /* Cor dos títulos e textos no tema escuro */
+  background-color: white;
+}
+
+
+
+
+/* Estilo dos botões */
+#theme-buttons {
+  margin-top: 10px;
+  
+}
+
+.theme-button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Suaviza a transição das cores */
+}
+
+/* configuração de mudar a cor do site */
+
+/*titulo aceitação*/
+
+/* Container geral com mais espaço */
+.container-aceitacao {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Alinha os elementos verticalmente */
+  padding: 20px;
+  gap: 250px; /* Aumenta o espaço entre os títulos e o texto */
+}
+
+/* Centraliza os títulos */
+.titles {
+  text-align: center;
+}
+
+.titles h1,
+.titles h2,
+.titles h3 {
+  margin: 5px 0;
+}
+
+/* Ajusta o tamanho do texto e sua largura */
+.text {
+  max-width: 500px; /* Aumenta a largura máxima do texto */
+  margin-left: 15px;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.6; /* Espaçamento de linha maior para melhor leitura */
+}
+
+
+/*titulo aceitação*/
+
