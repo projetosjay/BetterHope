@@ -1527,6 +1527,10 @@ footer div {
   color: #A2AEF7; /* Texto branco para botões no tema tradicional */
 }
 
+.traditional-theme button:hover{
+  color: black; /* Cor dos títulos e textos no tema claro */
+  background-color: rgb(189, 189, 189);
+}
 
 
 /* Tema Monocromático */
@@ -1550,6 +1554,11 @@ footer div {
 .monochrome-theme .theme-button {
   background-color: #f7f5e7;  /* Azul para botões no tema monocromático */
   color: black; /* Texto branco para botões no tema monocromático */
+}
+
+.monochrome-theme button:hover{
+  color: black; /* Cor dos títulos e textos no tema claro */
+  background-color: rgb(189, 189, 189);
 }
 
 
