@@ -19,44 +19,66 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body style="background-color: #A2AEF7;">
+<body>
   <div class="content">
-  <div class="hero_area">
-    <header class="fixo">
-      <nav class="itens_menu">
-        <nav class="navbar navbar-light">
-          <button class="navbar-toggler" type="button" id="toggleButton">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <div id="sidebarMenu" class="acss">
-          <h5>Ferramentas de Acessibilidade</h5>
-          <div class="d-grid gap-2 px-3">
-            <p class="txt-acessibilidade">Configuração do tamanho da fonte</p>
-            <button class="btn btn-light" id="increaseFont">Aumentar Fonte</button>
-            <button class="btn btn-light" id="decreaseFont">Diminuir Fonte</button>
+    <div class="hero_area">
+      <header class="fixo">
+        <nav class="itens_menu">
+          <nav class="navbar navbar-light">
+            <button class="navbar-toggler" type="button" id="toggleButton">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div id="sidebarMenu" class="acss">
+            <h4 class="txt-titulo-acessibiliadade">Ferramentas de Acessibilidade</h4>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Configuração do tamanho da fonte</p>
+              <button class="btn btn-light" id="increaseFont">
+                <i class="fas fa-search-plus"></i> Aumentar Fonte
+              </button>
+              <button class="btn btn-light" id="decreaseFont">
+                <i class="fas fa-search-minus"></i> Diminuir Fonte
+              </button>
+            </div>
+            <br>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Ajuste de cor</p>
+              <div id="theme-buttons">
+                <button class="theme-button" data-theme="traditional">
+                  <i class="fas fa-palette"></i> Tradicional
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="dark">
+                  <i class="fas fa-moon"></i> Tema Escuro
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="monochrome">
+                  <i class="fas fa-tint-slash"></i> Monocromático
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="high-contrast-light">
+                  <i class="fas fa-low-vision"></i> Alto Contraste Claro
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="high-contrast-dark">
+                  <i class="fas fa-adjust"></i> Alto Contraste Escuro
+                </button>
+              </div>
+            </div>          
+            <br>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Ouvir a leitura do texto</p>
+              <button class="btn btn-light" id="lerTexto">
+                <i class="fas fa-volume-up"></i> Ler seção
+              </button>
+            </div>          
           </div>
-          <div class="d-grid gap-2 px-3">
-            <p class="txt-acessibilidade">Ajuste de cor</p>
-            <div id="theme-buttons">
-              <button class="theme-button" data-theme="traditional">Tema Tradicional</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="monochrome">Tema Monocromático</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="high-contrast-light">Alto Contraste Claro</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="high-contrast-dark">Alto Contraste Escuro</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="dark">Tema Escuro</button> <!-- Novo botão para o tema escuro -->
-          </div>
-          </div>
-        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#plataforma">Plataforma</a></li>
@@ -91,8 +113,8 @@
                 <img src="images-topicos/saiba mais/familia-sindrome.jpg" alt="Descrição da imagem">
             </div>
             <div class="coluna-texto">
-                <h2 style="color: #f7f5e7">Saiba Mais...</h2>
-                <p style="text-align: justify; font-size: 17px; color: #faf6e2">O BetterHope é uma plataforma inovadora criada para oferecer suporte e orientação, sabemos que cuidar de uma criança com necessidades especiais pode ser desafiador, mas também repleto de momentos significativos e gratificantes. Nosso objetivo é fornecer um ambiente acolhedor e informativo, onde as famílias possam encontrar o apoio necessário para promover o bem-estar de seus filhos e ajudar no desenvolvimento de suas capacidades únicas.</p>
+                <h2 style="color: #A2AEF7">Saiba Mais...</h2>
+                <p style="text-align: justify; font-size: 17px; color: #666">O BetterHope é uma plataforma inovadora criada para oferecer suporte e orientação, sabemos que cuidar de uma criança com necessidades especiais pode ser desafiador, mas também repleto de momentos significativos e gratificantes. Nosso objetivo é fornecer um ambiente acolhedor e informativo, onde as famílias possam encontrar o apoio necessário para promover o bem-estar de seus filhos e ajudar no desenvolvimento de suas capacidades únicas.</p>
             </div>
         </div>
 </br>
@@ -106,12 +128,13 @@
   <h6 style="text-align: justify;">A missão do BetterHope é capacitar pais e responsáveis a enfrentar os desafios diários que surgem ao cuidar de uma criança com autismo ou Síndrome de Down. Fazemos isso oferecendo informações atualizadas, dicas práticas, ferramentas educativas e suporte emocional, sempre com foco em promover a inclusão e o desenvolvimento integral da criança. Queremos ser um ponto de referência onde as famílias possam se sentir seguras para buscar ajuda, compartilhar experiências e aprender sobre as melhores práticas no cuidado de seus filhos.</h6>
   
   <div style="text-align: justify; color:#A2AEF7;" class="titulotop">O que Oferecemos?</div>
-  <h6 style="text-align: justify;">      <ul>
-    <li><strong class="config-txt-texte">Recursos Educacionais:</strong> Disponibilizamos uma vasta gama de conteúdos informativos, artigos e guias práticos, cobrindo temas como: Terapias recomendadas para crianças com autismo ou Síndrome de Down, Dicas para o desenvolvimento da linguagem e da socialização, Estratégias para lidar com comportamentos desafiadores, Sugestões de atividades e brincadeiras inclusivas que ajudam no desenvolvimento cognitivo e motor.</li>
+  <h6 style="text-align: justify;">     
+   <ul>
+    <li style="color: #666;"><strong class="config-txt-texte">Recursos Educacionais:</strong> Disponibilizamos uma vasta gama de conteúdos informativos, artigos e guias práticos, cobrindo temas como: Terapias recomendadas para crianças com autismo ou Síndrome de Down, Dicas para o desenvolvimento da linguagem e da socialização, Estratégias para lidar com comportamentos desafiadores, Sugestões de atividades e brincadeiras inclusivas que ajudam no desenvolvimento cognitivo e motor.</li>
   </br>
-    <li><strong class="config-txt-texte">Comunidade de Apoio:</strong> No BetterHope, acreditamos que a troca de experiências entre pais é fundamental para o crescimento e superação de desafios. Por isso, criamos uma comunidade onde os pais podem se conectar, compartilhar suas histórias, pedir conselhos e encontrar apoio de outras famílias que estão passando por situações semelhantes.</li>
+    <li style="color: #666;"><strong class="config-txt-texte">Comunidade de Apoio:</strong> No BetterHope, acreditamos que a troca de experiências entre pais é fundamental para o crescimento e superação de desafios. Por isso, criamos uma comunidade onde os pais podem se conectar, compartilhar suas histórias, pedir conselhos e encontrar apoio de outras famílias que estão passando por situações semelhantes.</li>
   </br>
-    <li><strong class="config-txt-texte">Informações sobre Direitos e Inclusão:</strong> Apoiar uma criança com autismo ou Síndrome de Down também significa entender seus direitos e garantir que ela tenha acesso a oportunidades justas e inclusivas. Fornecemos informações detalhadas sobre leis, benefícios e políticas públicas que asseguram a inclusão de crianças com necessidades especiais em escolas, atividades sociais e outros ambientes.</li>
+    <li style="color: #666;"><strong class="config-txt-texte">Informações sobre Direitos e Inclusão:</strong> Apoiar uma criança com autismo ou Síndrome de Down também significa entender seus direitos e garantir que ela tenha acesso a oportunidades justas e inclusivas. Fornecemos informações detalhadas sobre leis, benefícios e políticas públicas que asseguram a inclusão de crianças com necessidades especiais em escolas, atividades sociais e outros ambientes.</li>
 </ul>
 </h6>
  
@@ -119,55 +142,51 @@
   <h6 style="text-align: justify;">No BetterHope, acreditamos que cada criança é única e tem o potencial de crescer e se desenvolver de maneira significativa. Nosso compromisso é com a qualidade da informação, com o respeito à diversidade de cada família e com a promoção de um ambiente de apoio e compreensão. Trabalhamos incansavelmente para fornecer os melhores recursos e garantir que os pais se sintam preparados e confiantes para enfrentar os desafios e celebrar as conquistas de seus filhos.</h6>
 </div>
 
+<br>
+<br>
 
-<!-- info section -->
- <footer style="background-color: #A2AEF7; padding: 20px; font-family: Arial, sans-serif;">
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    
-    <!-- Sobre o Projeto -->
-    <div style="flex: 1; min-width: 250px; padding: 10px;">
-      <div class="titulo-footer">Sobre o Projeto</div>
-      <p class="txt-footerum">BetterHope é uma plataforma dedicada a fornecer apoio para pais e cuidadores de crianças autistas ou com Síndrome de Down. Nossa missão é oferecer recursos práticos e uma comunidade acolhedora para melhorar a qualidade de vida dessas famílias.</p>
-    </div>
-    
-    <!-- Institucional -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Institucional</div>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="home.html" style="text-decoration: none; color: #f7f5e7;">Home</a></li>
-        <li class="txt-footer"><a href="plataforma.html" style="text-decoration: none; color: #f7f5e7;">A Plataforma</a></li>
-        <li class="txt-footer"><a href="sobre.html" style="text-decoration: none; color: #f7f5e7;">Quem Somos</a></li>
-      </ul>
-    </div>
-
-    <!-- Tópicos do Site -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Tópicos do Site</div>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="recursos.html" style="text-decoration: none; color: #f7f5e7;">Recursos</a></li>
-        <li class="txt-footer"><a href="comunidade.html" style="text-decoration: none; color: #f7f5e7;">Comunidade</a></li>
-        <li class="txt-footer"><a href="eventos.html" style="text-decoration: none; color: #f7f5e7;">Eventos</a></li>
-        <li class="txt-footer"><a href="depoimentos.html" style="text-decoration: none; color: #f7f5e7;">Depoimentos</a></li>
-      </ul>
-    </div>
-
-    <!-- Contato -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Contato</div>
-      <p class="txt-footerum">Entre em contato conosco para mais informações ou para se conectar com a nossa comunidade.</p>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="mailto:contato@betterhope.com" style="text-decoration: none; color: #f7f5e7;">Email: contato@betterhope.com</a></li>
-        <li class="txt-footer"><a href="https://www.instagram.com/bette.rhope/" target="_blank" style="text-decoration: none; color: #f7f5e7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 5px;">
-            <path d="M7.75 2h8.5C19.2 2 21 3.8 21 5.75v8.5C21 17.2 19.2 19 16.25 19h-8.5C4.8 19 3 17.2 3 14.25v-8.5C3 3.8 4.8 2 7.75 2zm0 2C6.8 4 6 4.8 6 5.75v8.5c0 .95.8 1.75 1.75 1.75h8.5c.95 0 1.75-.8 1.75-1.75v-8.5C18 4.8 17.2 4 16.25 4h-8.5zm9.75 1a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 7.5A4.5 4.5 0 1 1 12 16.5a4.5 4.5 0 0 1 0-9zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-          </svg>
-          Instagram
-        </a></li>
-      </ul>
-    </div>
+<footer>
+  <div class="footer-container">
+      <div class="logo-section">
+          <img src="images/logo.png" alt="BetterHope Logo">
+      </div>
+      <div class="links-section">
+          <div class="shop-links">
+              <h3>Tópicos</h3>
+              <ul>
+                  <li><a href="topico_1-descoberta.html">Descoberta</a></li>
+                  <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
+                  <li><a href="topico_3-gravidez.html">Gravidez</a></li>
+                  <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                  <li><a href="topico_5-educacao.html">Educação</a></li>
+                  <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
+                  <li><a href="topico_7-direitos.html">Direitos</a></li>
+              </ul>
+          </div>
+          <div class="company-section">
+              <h3 style="font-size: 20px; color: #333; margin-bottom: 10px; text-align: center;">Sobre</h3>
+              <p style="text-align: justify;">
+                BetterHope é uma plataforma dedicada a fornecer apoio para pais e cuidadores de crianças autistas ou com Síndrome de Down. Nossa missão é oferecer recursos práticos e uma comunidade acolhedora para melhorar a qualidade de vida dessas famílias.
+              </p>
+          </div>
+          <div class="contact-section">
+              <h3>Contato</h3>
+              <ul>
+                  <li><i class="fas fa-envelope"></i> <a href="mailto:contato@betterhope.com">contato@betterhope.com</a></li>
+              </ul>
+              <br>
+              <div class="social-media">
+                  <h3>Nos siga!</h3>
+                  <a href="https://www.instagram.com/bette.rhope/"><i class="fab fa-instagram"></i> Nosso instagram</a>
+              </div>
+          </div>
+      </div>
   </div>
-
+  <div class="footer-bottom">
+      <p>© BetterHope 2024</p>
+  </div>
 </footer>
+
 <!-- java ajuste de cor -->
 <script>
   // script.js

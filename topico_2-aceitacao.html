@@ -19,44 +19,66 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <div class="content">
-  <div class="hero_area">
-    <header class="fixo">
-      <nav class="itens_menu">
-        <nav class="navbar navbar-light">
-          <button class="navbar-toggler" type="button" id="toggleButton">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <div id="sidebarMenu" class="acss">
-          <h5>Ferramentas de Acessibilidade</h5>
-          <div class="d-grid gap-2 px-3">
-            <p class="txt-acessibilidade">Configuração do tamanho da fonte</p>
-            <button class="btn btn-light" id="increaseFont">Aumentar Fonte</button>
-            <button class="btn btn-light" id="decreaseFont">Diminuir Fonte</button>
+    <div class="hero_area">
+      <header class="fixo">
+        <nav class="itens_menu">
+          <nav class="navbar navbar-light">
+            <button class="navbar-toggler" type="button" id="toggleButton">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div id="sidebarMenu" class="acss">
+            <h4 class="txt-titulo-acessibiliadade">Ferramentas de Acessibilidade</h4>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Configuração do tamanho da fonte</p>
+              <button class="btn btn-light" id="increaseFont">
+                <i class="fas fa-search-plus"></i> Aumentar Fonte
+              </button>
+              <button class="btn btn-light" id="decreaseFont">
+                <i class="fas fa-search-minus"></i> Diminuir Fonte
+              </button>
+            </div>
+            <br>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Ajuste de cor</p>
+              <div id="theme-buttons">
+                <button class="theme-button" data-theme="traditional">
+                  <i class="fas fa-palette"></i> Tradicional
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="dark">
+                  <i class="fas fa-moon"></i> Tema Escuro
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="monochrome">
+                  <i class="fas fa-tint-slash"></i> Monocromático
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="high-contrast-light">
+                  <i class="fas fa-low-vision"></i> Alto Contraste Claro
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="high-contrast-dark">
+                  <i class="fas fa-adjust"></i> Alto Contraste Escuro
+                </button>
+              </div>
+            </div>          
+            <br>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Ouvir a leitura do texto</p>
+              <button class="btn btn-light" id="lerTexto">
+                <i class="fas fa-volume-up"></i> Ler seção
+              </button>
+            </div>          
           </div>
-          <div class="d-grid gap-2 px-3">
-            <p class="txt-acessibilidade">Ajuste de cor</p>
-            <div id="theme-buttons">
-              <button class="theme-button" data-theme="traditional">Tema Tradicional</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="monochrome">Tema Monocromático</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="high-contrast-light">Alto Contraste Claro</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="high-contrast-dark">Alto Contraste Escuro</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="dark">Tema Escuro</button> <!-- Novo botão para o tema escuro -->
-          </div>
-          </div>
-        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#plataforma">Plataforma</a></li>
@@ -85,7 +107,7 @@
   </br>
 </br>
 
-      <div class="teste"><img class="config-img-topo" src="images-topicos/aceitacao/aceitacao-capa.jpg" alt="colocar imagem do conteiner" ></div>
+      <div class="teste"><img class="config-img-topo" src="images-topicos/aceitacao/aceitacao-capa2.jpg" alt="colocar imagem do conteiner" ></div>
     </br>
   </br>
 </br>
@@ -130,7 +152,7 @@
 
 <div class="containerdiagnostico">
   <div class="left-content">
-      <h2 style="text-align: justify; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Como aceitar</h2>
+      <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Como aceitar</h2>
       <br>
       <p style="text-align: justify;" class="text">
         Aceitar o diagnóstico de autismo ou Síndrome de Down exige repensar os sonhos e planos que os pais tinham. Isso significa deixar de lado expectativas antigas e aprender a valorizar e celebrar as conquistas únicas de seus filhos. Em vez de focar no que poderia ter sido, os pais devem apoiar o desenvolvimento dos filhos dentro de suas capacidades individuais.
@@ -155,7 +177,7 @@
             <img src="images-topicos/aceitacao/aceitacao-ajuda.jpg" alt="Descrição da Imagem" class="image">
         </div>
         <div class="right-content">
-        <h2 style="text-align: justify; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Ajuda médica</h2>
+        <h2 style="text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);" class="title">Ajuda médica</h2>
          <br>
             <p style="text-align: justify;" class="text">
               Os estudos analisados mostram que o diagnóstico de uma deficiência pode gerar várias emoções e reações nos pais, como dúvida, choque, frustração, culpa, tristeza, medo, insegurança, rejeição, revolta, negação, vergonha, isolamento, superproteção, entre outras.
@@ -169,55 +191,48 @@
 </br>
 </br>
 
-       <!-- info section -->
- <!-- info section -->
- <footer style="background-color: #A2AEF7; padding: 20px; font-family: Arial, sans-serif;">
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    
-    <!-- Sobre o Projeto -->
-    <div style="flex: 1; min-width: 250px; padding: 10px;">
-      <div class="titulo-footer">Sobre o Projeto</div>
-      <p class="txt-footerum">BetterHope é uma plataforma dedicada a fornecer apoio para pais e cuidadores de crianças autistas ou com Síndrome de Down. Nossa missão é oferecer recursos práticos e uma comunidade acolhedora para melhorar a qualidade de vida dessas famílias.</p>
-    </div>
-    
-    <!-- Institucional -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Institucional</div>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="home.html" style="text-decoration: none; color: #f7f5e7;">Home</a></li>
-        <li class="txt-footer"><a href="plataforma.html" style="text-decoration: none; color: #f7f5e7;">A Plataforma</a></li>
-        <li class="txt-footer"><a href="sobre.html" style="text-decoration: none; color: #f7f5e7;">Quem Somos</a></li>
-      </ul>
-    </div>
-
-    <!-- Tópicos do Site -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Tópicos do Site</div>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="recursos.html" style="text-decoration: none; color: #f7f5e7;">Recursos</a></li>
-        <li class="txt-footer"><a href="comunidade.html" style="text-decoration: none; color: #f7f5e7;">Comunidade</a></li>
-        <li class="txt-footer"><a href="eventos.html" style="text-decoration: none; color: #f7f5e7;">Eventos</a></li>
-        <li class="txt-footer"><a href="depoimentos.html" style="text-decoration: none; color: #f7f5e7;">Depoimentos</a></li>
-      </ul>
-    </div>
-
-    <!-- Contato -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Contato</div>
-      <p class="txt-footerum">Entre em contato conosco para mais informações ou para se conectar com a nossa comunidade.</p>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="mailto:contato@betterhope.com" style="text-decoration: none; color: #f7f5e7;">Email: contato@betterhope.com</a></li>
-        <li class="txt-footer"><a href="https://www.instagram.com/bette.rhope/" target="_blank" style="text-decoration: none; color: #f7f5e7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 5px;">
-            <path d="M7.75 2h8.5C19.2 2 21 3.8 21 5.75v8.5C21 17.2 19.2 19 16.25 19h-8.5C4.8 19 3 17.2 3 14.25v-8.5C3 3.8 4.8 2 7.75 2zm0 2C6.8 4 6 4.8 6 5.75v8.5c0 .95.8 1.75 1.75 1.75h8.5c.95 0 1.75-.8 1.75-1.75v-8.5C18 4.8 17.2 4 16.25 4h-8.5zm9.75 1a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 7.5A4.5 4.5 0 1 1 12 16.5a4.5 4.5 0 0 1 0-9zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-          </svg>
-          Instagram
-        </a></li>
-      </ul>
-    </div>
+<footer>
+  <div class="footer-container">
+      <div class="logo-section">
+          <img src="images/logo.png" alt="BetterHope Logo">
+      </div>
+      <div class="links-section">
+          <div class="shop-links">
+              <h3>Tópicos</h3>
+              <ul>
+                  <li><a href="topico_1-descoberta.html">Descoberta</a></li>
+                  <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
+                  <li><a href="topico_3-gravidez.html">Gravidez</a></li>
+                  <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                  <li><a href="topico_5-educacao.html">Educação</a></li>
+                  <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
+                  <li><a href="topico_7-direitos.html">Direitos</a></li>
+              </ul>
+          </div>
+          <div class="company-section">
+              <h3 style="font-size: 20px; color: #333; margin-bottom: 10px; text-align: center;">Sobre</h3>
+              <p style="text-align: justify;">
+                BetterHope é uma plataforma dedicada a fornecer apoio para pais e cuidadores de crianças autistas ou com Síndrome de Down. Nossa missão é oferecer recursos práticos e uma comunidade acolhedora para melhorar a qualidade de vida dessas famílias.
+              </p>
+          </div>
+          <div class="contact-section">
+              <h3>Contato</h3>
+              <ul>
+                  <li><i class="fas fa-envelope"></i> <a href="mailto:contato@betterhope.com">contato@betterhope.com</a></li>
+              </ul>
+              <br>
+              <div class="social-media">
+                  <h3>Nos siga!</h3>
+                  <a href="https://www.instagram.com/bette.rhope/"><i class="fab fa-instagram"></i> Nosso instagram</a>
+              </div>
+          </div>
+      </div>
   </div>
-
+  <div class="footer-bottom">
+      <p>© BetterHope 2024</p>
+  </div>
 </footer>
+
 
 <!-- java ajuste de cor -->
  <script>

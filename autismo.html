@@ -19,44 +19,66 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <div class="content">
-  <div class="hero_area">
-    <header class="fixo">
-      <nav class="itens_menu">
-        <nav class="navbar navbar-light">
-          <button class="navbar-toggler" type="button" id="toggleButton">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <div id="sidebarMenu" class="acss">
-          <h5>Ferramentas de Acessibilidade</h5>
-          <div class="d-grid gap-2 px-3">
-            <p class="txt-acessibilidade">Configuração do tamanho da fonte</p>
-            <button class="btn btn-light" id="increaseFont">Aumentar Fonte</button>
-            <button class="btn btn-light" id="decreaseFont">Diminuir Fonte</button>
+    <div class="hero_area">
+      <header class="fixo">
+        <nav class="itens_menu">
+          <nav class="navbar navbar-light">
+            <button class="navbar-toggler" type="button" id="toggleButton">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div id="sidebarMenu" class="acss">
+            <h4 class="txt-titulo-acessibiliadade">Ferramentas de Acessibilidade</h4>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Configuração do tamanho da fonte</p>
+              <button class="btn btn-light" id="increaseFont">
+                <i class="fas fa-search-plus"></i> Aumentar Fonte
+              </button>
+              <button class="btn btn-light" id="decreaseFont">
+                <i class="fas fa-search-minus"></i> Diminuir Fonte
+              </button>
+            </div>
+            <br>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Ajuste de cor</p>
+              <div id="theme-buttons">
+                <button class="theme-button" data-theme="traditional">
+                  <i class="fas fa-palette"></i> Tradicional
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="dark">
+                  <i class="fas fa-moon"></i> Tema Escuro
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="monochrome">
+                  <i class="fas fa-tint-slash"></i> Monocromático
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="high-contrast-light">
+                  <i class="fas fa-low-vision"></i> Alto Contraste Claro
+                </button>
+                <br><br>
+                <button class="theme-button" data-theme="high-contrast-dark">
+                  <i class="fas fa-adjust"></i> Alto Contraste Escuro
+                </button>
+              </div>
+            </div>          
+            <br>
+            <br>
+            <div class="d-grid gap-2 px-3">
+              <p class="txt-acessibilidade">Ouvir a leitura do texto</p>
+              <button class="btn btn-light" id="lerTexto">
+                <i class="fas fa-volume-up"></i> Ler seção
+              </button>
+            </div>          
           </div>
-          <div class="d-grid gap-2 px-3">
-            <p class="txt-acessibilidade">Ajuste de cor</p>
-            <div id="theme-buttons">
-              <button class="theme-button" data-theme="traditional">Tema Tradicional</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="monochrome">Tema Monocromático</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="high-contrast-light">Alto Contraste Claro</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="high-contrast-dark">Alto Contraste Escuro</button>
-              <br>
-              <br>
-              <button class="theme-button" data-theme="dark">Tema Escuro</button> <!-- Novo botão para o tema escuro -->
-          </div>
-          </div>
-        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#plataforma">Plataforma</a></li>
@@ -81,201 +103,145 @@
         </ul>
       </nav>
     </header>
-    </br>
-    </br>
-    </br>
+    <div class="teste"><img class="config-img-topo" src="images-down-autismo/autismo/autismo-capa.jpg" alt="colocar imagem do conteiner" ></div>
+  </br>
+</br>
         <div class="containerteste">
             <div class="coluna-imagem">
-              <img src="images/saiba mais/criança-autismo.png" alt="Descrição da imagem" style="width: 80%;">
+                <img src="images-down-autismo/autismo/criança-autismo.png" alt="Descrição da imagem">
             </div>
             <div class="coluna-texto">
-                <h2>Autismo</h2>
-                <p class="config-txt">Em uma época longínqua, quando os mapas eram desenhados à mão e a cartografia ainda era uma arte enigmática, uma cidade perdida fascinava os exploradores e os sonhadores. Chamavam-na de Eldoria, uma metrópole que, segundo lendas, era repleta de maravilhas e segredos antigos.
-                    Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.</p>
+                <h2>Transtorno do espectro autista</h2>
+                <p class="config-txt">O Transtorno Espectro Autista é caracterizado por dificuldades persistentes na comunicação e interação social, além de padrões limitados e repetitivos de comportamento, interesses ou atividades. Essas dificuldades se manifestam em diferentes níveis de intensidade, variando desde formas mais leves, que podem ser sutis e menos perceptíveis, até formas mais severas, que requerem maior suporte.  </p>
             </div>
         </div>
 </br>
 </br>
 
         <div class="botoes-container">
-            <button class="botao">Botão 1</button>
-            <button class="botao">Botão 2</button>
-            <button class="botao">Botão 3</button>
-            <button class="botao">Botão 4</button>
-        </div>
-
-</br>
-</br>
-</br>
-</br>
-        <div class="containerdowntxt">
-            <div class="coluna-esquerda">
-                <h2>Subtítulo do Conteúdo</h2>
-                <p class="congig-txt-topico">Este é um exemplo de texto que aparece abaixo do subtítulo na coluna da esquerda. Aqui você pode adicionar qualquer tipo de conteúdo textual para descrever algo relacionado ao subtítulo. Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.</p>
-            </div>
-            <div class="coluna-direita">
-                <img src="images/autismo/criança.jpeg" alt="Descrição da imagem">
-            </div>
+            <button class="botao">Autismo</button>
+            <button class="botao">Níveis de suporte</button>
+            <button class="botao">Atividades recomendadas</button>
         </div>
 
 </br>
 </br>
 
-        <div class="depoimento-container">
-            <div class="perfil-imagem">
-                <img src="images/dev/ana.png" alt="Foto do perfil">
-            </div>
-            <div class="depoimento-texto">
-                <h3>Nome da Pessoa</h3>
-                <p>"Este é um exemplo de citação ou depoimento de alguém sobre algo. É aqui que a pessoa compartilha sua opinião ou experiência."</p>
-            </div>
-        </div>
-</br>
-</br>
-</br>
-</br>
+<div class="textoconteiner1">
+  <div style="text-align: justify;" class="titulotop">Autismo</div>
+  <br>
+  <h6 style="text-align: justify;">O Autismo é um transtorno do neurodesenvolvimento caracterizado por dificuldades na interação social, na comunicação e por padrões restritos e repetitivos de comportamento.De acordo com o Manual Diagnóstico e Estatístico de Transtornos Mentais, quinta edição (DSM-5, 2014), o Transtorno Espectro Autista é caracterizado por dificuldades persistentes na comunicação e interação social, além de padrões limitados e repetitivos de comportamento, interesses ou atividades. Essas dificuldades se manifestam em diferentes níveis de intensidade, variando desde formas mais leves, que podem ser sutis e menos perceptíveis, até formas mais severas, que requerem maior suporte. </h6>
+  <br>
+  <h6 style="text-align: justify;">É comum notar uma preferência por brincar com os mesmos objetos, o que pode ser visto como uma maneira de buscar segurança e previsibilidade em um ambiente que pode parecer desconfortável. </h6>
+  <br>
+  <h6 style="text-align: justify;">Do ponto de vista comportamental, é frequente observar a repetição de coisas como a organização cuidadosa com objetos, além de não serem flexíveis a mudanças na rotina ou no ambiente. Nesses casos, a criança pode ter dificuldades em formar amizades e estabelecer contato visual com os outros, o que pode resultar em um sentimento de isolamento ou em desafios para sua inserção em círculos sociais. </h6>
+  <br>
+  <h6 style="text-align: justify;">Portanto, o Transtorno do Espectro Autista (TEA), traz diversos desafios que afetam a comunicação, as interações sociais e o comportamento, podendo se manifestar de maneira singular em cada indivíduo. Compreender essas características é fundamental para criar um ambiente mais inclusivo e receptivo. Reconhecer e respeitar as necessidades particulares de cada indivíduo com autismo é necessário para promover sua inclusão social e emocional. Oferecendo o suporte necessário e chances de desenvolvimento, é possível ajudar essas pessoas a se sentirem mais confiantes e valorizadas, promovendo assim um convívio proporcional para todos. </h6>
+</div>
 
-       <div class="containerpur">
-           <div class="coluna-imagem">
-              <img src="images/autismo/criança brincando.jpg" alt="Descrição da imagem">
-         </div>
-        <div class="coluna-esquerda">
-        <h2>Subtítulo do Conteúdo</h2>
-        <p class="congig-txt-topico">Em uma época longínqua, quando os mapas eram desenhados à mão e a cartografia ainda era uma arte enigmática, uma cidade perdida fascinava os exploradores e os sonhadores. Chamavam-na de Eldoria, uma metrópole que, segundo lendas, era repleta de maravilhas e segredos antigos.
-            Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.</p>
-        </div>
-        </div>
-</br>
-</br>
+ 
 
-        <div class="depoimento-container">
-            <div class="perfil-imagem">
-                <img src="images/dev/heloisa.png" alt="Foto do perfil">
-            </div>
-            <div class="depoimento-texto">
-                <h3>Nome da Pessoa</h3>
-                <p>"Este é um exemplo de citação ou depoimento de alguém sobre algo. É aqui que a pessoa compartilha sua opinião ou experiência."</p>
-            </div>
-        </div>
-
-</br>
-</br>
-</br>
-</br>
-
-</br>
-</br>
-</br>
-</br>
-        <div class="containerdowntxt">
-            <div class="coluna-esquerda">
-                <h2>Subtítulo do Conteúdo</h2>
-                <p class="congig-txt-topico">Este é um exemplo de texto que aparece abaixo do subtítulo na coluna da esquerda. Aqui você pode adicionar qualquer tipo de conteúdo textual para descrever algo relacionado ao subtítulo. Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.</p>
-            </div>
-            <div class="coluna-direita">
-                <img src="images/autismo/criança.jpeg" alt="Descrição da imagem">
-            </div>
-        </div>
-
-</br>
-</br>
-
-        <div class="depoimento-container">
-            <div class="perfil-imagem">
-                <img src="images/dev/isa.png" alt="Foto do perfil">
-            </div>
-            <div class="depoimento-texto">
-                <h3>Nome da Pessoa</h3>
-                <p>"Este é um exemplo de citação ou depoimento de alguém sobre algo. É aqui que a pessoa compartilha sua opinião ou experiência."</p>
-            </div>
-        </div>
-</br>
-</br>
-</br>
-</br>
-
-       <div class="containerpur">
-           <div class="coluna-imagem">
-              <img src="images/autismo/criança brincando.jpg" alt="Descrição da imagem">
-         </div>
-        <div class="coluna-esquerda">
-        <h2>Subtítulo do Conteúdo</h2>
-        <p class="congig-txt-topico">Em uma época longínqua, quando os mapas eram desenhados à mão e a cartografia ainda era uma arte enigmática, uma cidade perdida fascinava os exploradores e os sonhadores. Chamavam-na de Eldoria, uma metrópole que, segundo lendas, era repleta de maravilhas e segredos antigos.
-            Os relatos sobre Eldoria eram variados e frequentemente contraditórios. Alguns diziam que a cidade estava escondida nas montanhas cobertas de neve, enquanto outros acreditavam que ela se encontrava nas profundezas de uma densa floresta tropical. Era descrita como uma cidade de ouro e pedras preciosas, com ruas pavimentadas com mármore e edifícios adornados com joias.</p>
-        </div>
-        </div>
-
-</br>
-</br>
-
-        <div class="depoimento-container">
-            <div class="perfil-imagem">
-                <img src="images/dev/jay.png" alt="Foto do perfil">
-            </div>
-            <div class="depoimento-texto">
-                <h3>Nome da Pessoa</h3>
-                <p>"Este é um exemplo de citação ou depoimento de alguém sobre algo. É aqui que a pessoa compartilha sua opinião ou experiência."</p>
-            </div>
-        </div>
-
-</br>
-</br>
-</br>
-</br>
-  
-        
+<div class="textoconteiner1">
+  <div style="text-align: justify;" class="titulotop">Níveis de suporte</div>
+  <br>
+  <h6 style="text-align: justify;"> O Transtorno do Espectro Autista (TEA) é classificado em três níveis. No nível 1, o paciente é mais independente e não precisa de tanto apoio, já no nível 3, a dependência é maior e o paciente necessita de auxílio excessivo. </h6>
+  <br>
+  <h2 class="container-subtitle">Nível 1</h2>
+  <h6 style="text-align: justify;">Podem ter mais dificuldades em interações sociais, comportamentos limitados e repetitivos. Não precisam de tanto suporte nas atividades do dia a dia, quanto os indivíduos com outros níveis de TEA. Em geral, conversam bem, mas podem ter dificuldades em formar amizades e manter as conversas. </h6>
+  <br>
+  <h2 class="container-subtitle">Nível 2</h2>
+  <h6 style="text-align: justify;">Os indivíduos apresentam maior dificuldade em interações sociais e por isso, necessitam de mais apoio. Geralmente, as conversas com esses pacientes são breves e focadas em temas específicos. Além disso, tendem a evitar o contato visual e podem não demonstrar emoções durante as interações. Podem se sentir perturbados ao sair da rotina e mudar os hábitos diários. </h6>
+  <br>
+  <h2 class="container-subtitle">Nível 3</h2>
+  <h6 style="text-align: justify;">Dificuldades na comunicação e nas interações sociais. Apresentam comportamentos limitados e repetitivos que podem prejudicar a rotina do indivíduo. Podem ser muito ou pouco sensíveis a estímulos sensoriais (ações ligadas a visão, paladar, olfato, equilíbrio e a audição). Necessitam de bastante apoio para aprender as atividades do dia a dia. </h6>
+  <br>
+  <h6 style="text-align: justify;"> De acordo com dados da Organização Pan-Americana de Saúde (Opas), os sinais do Autismo costumam ser aparentes até os cinco anos de idade na maioria dos casos. Considerando que o transtorno se manifesta na infância e pode continuar na adolescência e na fase adulta. Nesse sentido, pessoas com o espectro autista podem ter outras condições associadas, para além das dificuldades intelectuais, como destaca a Opas. Entre essas condições podem estar a epilepsia, a depressão, a ansiedade e o transtorno do déficit de atenção e hiperatividade (TDAH).  </h6>
+</div>
 
 
-
-        <!-- info section -->
- <!-- info section -->
- <footer style="background-color: #A2AEF7; padding: 20px; font-family: Arial, sans-serif;">
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    
-    <!-- Sobre o Projeto -->
-    <div style="flex: 1; min-width: 250px; padding: 10px;">
-      <div class="titulo-footer">Sobre o Projeto</div>
-      <p class="txt-footerum">BetterHope é uma plataforma dedicada a fornecer apoio para pais e cuidadores de crianças autistas ou com Síndrome de Down. Nossa missão é oferecer recursos práticos e uma comunidade acolhedora para melhorar a qualidade de vida dessas famílias.</p>
-    </div>
-    
-    <!-- Institucional -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Institucional</div>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="home.html" style="text-decoration: none; color: #f7f5e7;">Home</a></li>
-        <li class="txt-footer"><a href="plataforma.html" style="text-decoration: none; color: #f7f5e7;">A Plataforma</a></li>
-        <li class="txt-footer"><a href="sobre.html" style="text-decoration: none; color: #f7f5e7;">Quem Somos</a></li>
-      </ul>
-    </div>
-
-    <!-- Tópicos do Site -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Tópicos do Site</div>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="recursos.html" style="text-decoration: none; color: #f7f5e7;">Recursos</a></li>
-        <li class="txt-footer"><a href="comunidade.html" style="text-decoration: none; color: #f7f5e7;">Comunidade</a></li>
-        <li class="txt-footer"><a href="eventos.html" style="text-decoration: none; color: #f7f5e7;">Eventos</a></li>
-        <li class="txt-footer"><a href="depoimentos.html" style="text-decoration: none; color: #f7f5e7;">Depoimentos</a></li>
-      </ul>
-    </div>
-
-    <!-- Contato -->
-    <div style="flex: 1; min-width: 150px; padding: 10px;">
-      <div class="titulo-footer">Contato</div>
-      <p class="txt-footerum">Entre em contato conosco para mais informações ou para se conectar com a nossa comunidade.</p>
-      <ul style="list-style: none; padding: 0;">
-        <li class="txt-footer"><a href="mailto:contato@betterhope.com" style="text-decoration: none; color: #f7f5e7;">Email: contato@betterhope.com</a></li>
-        <li class="txt-footer"><a href="https://www.instagram.com/bette.rhope/" target="_blank" style="text-decoration: none; color: #f7f5e7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 5px;">
-            <path d="M7.75 2h8.5C19.2 2 21 3.8 21 5.75v8.5C21 17.2 19.2 19 16.25 19h-8.5C4.8 19 3 17.2 3 14.25v-8.5C3 3.8 4.8 2 7.75 2zm0 2C6.8 4 6 4.8 6 5.75v8.5c0 .95.8 1.75 1.75 1.75h8.5c.95 0 1.75-.8 1.75-1.75v-8.5C18 4.8 17.2 4 16.25 4h-8.5zm9.75 1a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 7.5A4.5 4.5 0 1 1 12 16.5a4.5 4.5 0 0 1 0-9zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-          </svg>
-          Instagram
-        </a></li>
-      </ul>
-    </div>
+    <!-- Container de fundo -->
+    <div class="cards-bg">
+      <div style="text-align: justify;" class="titulotop">Atividades recomendadas</div>
+    </br>
+      <div class="cards-container">
+          <!-- Card 1 -->
+          <div class="card">
+              <img src="images-down-autismo/autismo/autismo-massinha.jpg" alt="Atividade 1">
+              <div class="card-content">
+                  <h3>Atividade Sensorial com Massinhas</h3>
+                  <p>A atividade sensorial com massinhas estimula o desenvolvimento motor fino, a criatividade e a imaginação, além de proporcionar uma experiência tátil que pode ser relaxante e terapêutica para crianças com autismo. Manipular massinhas ajuda a melhorar a coordenação das mãos e dedos, ao mesmo tempo que oferece uma forma de explorar texturas de maneira controlada. Essa atividade pode ser usada para reduzir a ansiedade, incentivar a expressão criativa e desenvolver habilidades sociais, especialmente quando realizada em grupo.</p>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+              <img src="images-down-autismo/autismo/autismo-blocos.jpg" alt="Atividade 2">
+              <div class="card-content">
+                  <h3>Jogos de Construção</h3>
+                  <p>Os jogos de construção, como blocos de montar, são ótimos para estimular o desenvolvimento cognitivo e motor de crianças com autismo. Ao construir estruturas, elas trabalham a coordenação motora fina e o pensamento lógico, enquanto exploram sua criatividade. Esses jogos também promovem a resolução de problemas e podem ser usados para melhorar a concentração e a paciência. Quando realizados em grupo, os jogos de construção incentivam a interação social e a cooperação, proporcionando oportunidades de aprendizado colaborativo.</p>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+              <img src="images-down-autismo/autismo/autismo-agua.jpg" alt="Atividade 3">
+              <div class="card-content">
+                  <h3>Brincadeiras com Água</h3>
+                  <p>As brincadeiras com água oferecem uma experiência sensorial divertida e envolvente para crianças com autismo. Essas atividades ajudam a desenvolver habilidades motoras, como agarrar e despejar, ao mesmo tempo que proporcionam estímulos visuais e táteis. Brincar com água pode ser relaxante e terapêutico, ajudando a reduzir a ansiedade e promover o bem-estar. Além disso, essas brincadeiras incentivam a exploração, a criatividade e o aprendizado através da observação de fenômenos simples, como flutuação e mistura de cores. Quando realizadas em grupo, promovem a socialização e a interação entre as crianças.</p>
+              </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card">
+              <img src="images-down-autismo/autismo/autismo-desenho.jpg" alt="Atividade 4">
+              <div class="card-content">
+                  <h3>Desenho e Pintura</h3>
+                  <p>O desenho e a pintura são atividades criativas que oferecem uma forma expressiva para crianças com autismo comunicarem seus sentimentos e ideias. Essas atividades ajudam a desenvolver habilidades motoras finas e a coordenação, além de estimular a imaginação e a concentração. Ao utilizar cores e formas, as crianças podem explorar diferentes emoções e contar histórias visuais, promovendo o autoconceito e a autoexpressão. O ato de criar arte também pode ser terapêutico, proporcionando um espaço seguro para relaxar e lidar com a ansiedade. Além disso, essas atividades podem ser realizadas em grupo, favorecendo a socialização e a interação com outras crianças.</p>
+              </div>
+          </div>
+      </div>
   </div>
 
+
+  <footer>
+    <div class="footer-container">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="BetterHope Logo">
+        </div>
+        <div class="links-section">
+            <div class="shop-links">
+                <h3>Tópicos</h3>
+                <ul>
+                    <li><a href="topico_1-descoberta.html">Descoberta</a></li>
+                    <li><a href="topico_2-aceitacao.html">Aceitação</a></li>
+                    <li><a href="topico_3-gravidez.html">Gravidez</a></li>
+                    <li><a href="topico_4-contexto.html">Contexto famil</a></li>
+                    <li><a href="topico_5-educacao.html">Educação</a></li>
+                    <li><a href="topico_6-convivio.html">Convívio escolar e social</a></li>
+                    <li><a href="topico_7-direitos.html">Direitos</a></li>
+                </ul>
+            </div>
+            <div class="company-section">
+                <h3 style="font-size: 20px; color: #333; margin-bottom: 10px; text-align: center;">Sobre</h3>
+                <p style="text-align: justify;">
+                  BetterHope é uma plataforma dedicada a fornecer apoio para pais e cuidadores de crianças autistas ou com Síndrome de Down. Nossa missão é oferecer recursos práticos e uma comunidade acolhedora para melhorar a qualidade de vida dessas famílias.
+                </p>
+            </div>
+            <div class="contact-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:contato@betterhope.com">contato@betterhope.com</a></li>
+                </ul>
+                <br>
+                <div class="social-media">
+                    <h3>Nos siga!</h3>
+                    <a href="https://www.instagram.com/bette.rhope/"><i class="fab fa-instagram"></i> Nosso instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© BetterHope 2024</p>
+    </div>
 </footer>
+
 
 <!-- java ajuste de cor -->
 <script>
